@@ -3,9 +3,10 @@
 body{
     background-color: gainsboro;
 }
-.bx{
+.bx, .list-group, table{
     box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
     border: 0px;
+    overflow-x :auto;
 }
 .ml-3{
     margin-left: 10px;
