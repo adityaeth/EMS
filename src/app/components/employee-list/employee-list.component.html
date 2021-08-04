@@ -23,54 +23,17 @@
                     </tr>
                 </thead>
                 <tbody >
-                    <tr>
-                        <td>1</td>
-                        <td>John Doe</td>
-                        <td>johndoe@gmail.com</td>
+                    <tr *ngFor="let employee of employees; let i = index;">
+                        <td>{{employee.id}}</td>
+                        <td>{{employee.name}}</td>
+                        <td>{{employee.mail}}</td>
                         <td><a href="" data-bs-toggle="modal" data-bs-target="#detail_employee1"
                                 class="btn btn-sm w-100 btn-info">Details</a></td>
                         <td><a href="" data-bs-toggle="modal" data-bs-target="#edit_employee1"
                                 class="btn btn-sm w-100 btn-info btn-warning">Edit</a></td>
                         <td><a href="" data-bs-toggle="modal" data-bs-target="#delete_employee1"
                                 class="btn btn-sm w-100 btn-info btn-danger"
-                                onclick="confirm('Are you sure to delete \'John Doe\' ?')">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>John Doe</td>
-                        <td>johndoe@gmail.com</td>
-                        <td><a href="" data-bs-toggle="modal" data-bs-target="#detail_employee"
-                                class="btn btn-sm w-100 btn-info">Details</a></td>
-                        <td><a href="" data-bs-toggle="modal" data-bs-target="#edit_employee"
-                                class="btn btn-sm w-100 btn-info btn-warning">Edit</a></td>
-                        <td><a href="" class="btn btn-sm w-100 btn-info btn-danger">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>John Doe</td>
-                        <td>johndoe@gmail.com</td>
-                        <td><a href="" data-bs-toggle="modal" data-bs-target="#detail_employee" data-bs-toggle="modal"
-                                data-bs-target="#detail_employee" class="btn btn-sm w-100 btn-info">Details</a></td>
-                        <td><a href="" class="btn btn-sm w-100 btn-info btn-warning">Edit</a></td>
-                        <td><a href="" class="btn btn-sm w-100 btn-info btn-danger">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>John Doe</td>
-                        <td>johndoe@gmail.com</td>
-                        <td><a href="" data-bs-toggle="modal" data-bs-target="#detail_employee"
-                                class="btn btn-sm w-100 btn-info">Details</a></td>
-                        <td><a href="" class="btn btn-sm w-100 btn-info btn-warning">Edit</a></td>
-                        <td><a href="" class="btn btn-sm w-100 btn-info btn-danger">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>John Doe</td>
-                        <td>johndoe@gmail.com</td>
-                        <td><a href="" data-bs-toggle="modal" data-bs-target="#detail_employee"
-                                class="btn btn-sm w-100 btn-info">Details</a></td>
-                        <td><a href="" class="btn btn-sm w-100 btn-info btn-warning">Edit</a></td>
-                        <td><a href="" class="btn btn-sm w-100 btn-info btn-danger">Delete</a></td>
+                                onclick="confirm('Are you sure to delete?')">Delete</a></td>
                     </tr>
                 </tbody>
             </table>
