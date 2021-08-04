@@ -8,6 +8,7 @@ import { JobList } from 'src/app/models/joblist';
 export class JobListComponent implements OnInit {
 
   jobs: JobList[] = [];
+  retid!: number;
   constructor() { }
 
   ngOnInit(): void {
@@ -15,34 +16,36 @@ export class JobListComponent implements OnInit {
     this.jobs = [
       {
         id: 1,
-        jobAdded: '25-6-20',
+        jobAdded: '25-06-20',
         job: 'Web Developer'
       },
       {
         id: 2,
         jobAdded: '11-10-19',
-        job: 'Software Developer'
+        job: 'Web Designer'
       },
       {
         id: 3,
         jobAdded: '11-10-19',
-        job: 'Software Developer'
+        job: 'Graphic Developer'
       },
       {
         id: 4,
         jobAdded: '11-10-19',
-        job: 'Software Developer'
+        job: 'App Developer'
       },
       {
         id: 5,
         jobAdded: '11-10-19',
-        job: 'Software Developer'
+        job: 'Graphic Designer'
       }
     ]
   }
 
-  delete(id: number) {
-    console.log("delete called!");
-    this.jobs.splice(id,1);
+  getid(id: number) {
+    this.retid = id;
+  }
+  delete(retid: number) {
+    this.jobs.splice(retid, 1);
   }
 }
