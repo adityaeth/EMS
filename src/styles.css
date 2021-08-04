@@ -3,13 +3,14 @@
 body{
     background-color: gainsboro;
 }
-.bx, .list-group, table{
+.bx, .list-group, {
     box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
     border: 0px;
 }
 .ml-3{
     margin-left: 10px;
 }
-.table{
-    overflow-x :auto;
+.shadow{
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
 }
