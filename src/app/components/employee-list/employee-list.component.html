@@ -22,7 +22,7 @@
                         <th>Delete</th>
                     </tr>
                 </thead>
-                <tbody >
+                <tbody>
                     <tr *ngFor="let employee of employees; let i = index;">
                         <td>{{employee.id}}</td>
                         <td>{{employee.name}}</td>
@@ -31,9 +31,8 @@
                                 class="btn btn-sm w-100 btn-info">Details</a></td>
                         <td><a href="" data-bs-toggle="modal" data-bs-target="#edit_employee1"
                                 class="btn btn-sm w-100 btn-info btn-warning">Edit</a></td>
-                        <td><a href="" data-bs-toggle="modal" data-bs-target="#delete_employee1"
-                                class="btn btn-sm w-100 btn-info btn-danger"
-                                onclick="confirm('Are you sure to delete?')">Delete</a></td>
+                        <td><a href="" data-bs-toggle="modal" data-bs-target="#delete_employee"
+                                class="btn btn-sm w-100 btn-info btn-danger">Delete</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -174,3 +173,23 @@
 </div>
 
 <!-- Employee Edit Modal -->
+
+<!-- Employee Delete Modal -->
+<div class="modal fade" id="delete_employee" tabindex="-1" aria-labelledby="delete_employee" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="edit_employee1">Delete Record?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are You Sure?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Employee Delete Modal -->

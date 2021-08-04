@@ -53,4 +53,8 @@ export class EmployeeListComponent implements OnInit {
       }
     ]
   }
+  delete(id: number) {
+    console.log("delete called!");
+    this.employees.splice(id,1);
+  }
 }
