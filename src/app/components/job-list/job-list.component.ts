@@ -8,36 +8,36 @@ import { JobList } from 'src/app/models/joblist';
 export class JobListComponent implements OnInit {
 
   jobs: JobList[] = [];
-  retid!: number;
+  retid: number = 0;
   constructor() { }
 
   ngOnInit(): void {
 
     this.jobs = [
       {
-        id: 1,
-        jobAdded: '25-06-20',
+        id: 1001,
+        jobAdded: '06/25/20',
         job: 'Web Developer'
       },
       {
-        id: 2,
-        jobAdded: '11-10-19',
+        id: 1002,
+        jobAdded: '11/10/19',
         job: 'Web Designer'
       },
       {
-        id: 3,
-        jobAdded: '11-10-19',
+        id: 1003,
+        jobAdded: '11/16/19',
         job: 'Graphic Developer'
       },
       {
-        id: 4,
-        jobAdded: '11-10-19',
+        id: 1004,
+        jobAdded: '11/30/19',
         job: 'App Developer'
       },
       {
-        id: 5,
-        jobAdded: '11-10-19',
-        job: 'Graphic Designer'
+        id: 1005,
+        jobAdded: '01/26/19',
+        job: 'Software Developer'
       }
     ]
   }

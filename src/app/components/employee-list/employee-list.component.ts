@@ -6,6 +6,7 @@ import { EmployeeList } from 'src/app/models/employeelist';
 })
 export class EmployeeListComponent implements OnInit {
   employees: EmployeeList[] = [];
+  retid: number = 0;
   constructor() { }
 
   ngOnInit(): void {
@@ -14,7 +15,7 @@ export class EmployeeListComponent implements OnInit {
       {
         id: 1,
         joiningDate: '25-6-20',
-        name: 'Aditya Pra',
+        name: 'Aditya Prakash',
         mail: 'mail@test.com',
         phone: '752031216',
         job: 'Web Developer'
@@ -22,39 +23,41 @@ export class EmployeeListComponent implements OnInit {
       {
         id: 2,
         joiningDate: '25-6-20',
-        name: 'Kingshuk',
+        name: 'Kingshuk Nath',
         mail: 'mail@test.com',
         phone: '752651216',
-        job: 'Software Developer'
+        job: 'Web Developer'
       },
       {
         id: 3,
         joiningDate: '25-6-20',
-        name: 'Kingshuk',
+        name: 'Aftab Mustafa',
         mail: 'mail@test.com',
         phone: '752651216',
-        job: 'Software Developer'
+        job: 'Graphic Designer'
       },
       {
         id: 4,
         joiningDate: '25-6-20',
-        name: 'Kingshuk',
+        name: 'Debangan Roy',
         mail: 'mail@test.com',
         phone: '752651216',
-        job: 'Software Developer'
+        job: 'Web Designer'
       },
       {
         id: 5,
         joiningDate: '25-6-20',
-        name: 'Kingshuk',
+        name: 'Nisha Dan',
         mail: 'mail@test.com',
         phone: '752651216',
         job: 'Software Developer'
       }
     ]
   }
-  delete(id: number) {
-    console.log("delete called!");
-    this.employees.splice(id,1);
+  getid(id: number) {
+    this.retid = id;
+  }
+  delete(retid: number) {
+    this.employees.splice(retid, 1);
   }
 }
