@@ -26,6 +26,30 @@ export class EmployeeListComponent implements OnInit {
         mail: 'mail@test.com',
         phone: '752651216',
         job: 'Software Developer'
+      },
+      {
+        id: 3,
+        joiningDate: '25-6-20',
+        name: 'Kingshuk',
+        mail: 'mail@test.com',
+        phone: '752651216',
+        job: 'Software Developer'
+      },
+      {
+        id: 4,
+        joiningDate: '25-6-20',
+        name: 'Kingshuk',
+        mail: 'mail@test.com',
+        phone: '752651216',
+        job: 'Software Developer'
+      },
+      {
+        id: 5,
+        joiningDate: '25-6-20',
+        name: 'Kingshuk',
+        mail: 'mail@test.com',
+        phone: '752651216',
+        job: 'Software Developer'
       }
     ]
   }
