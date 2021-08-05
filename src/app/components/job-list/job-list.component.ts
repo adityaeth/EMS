@@ -9,6 +9,9 @@ export class JobListComponent implements OnInit {
 
   jobs: JobList[] = [];
   retid: number = 0;
+  id: number   = 0;
+  jobAdded: string = "";
+  job: string =  "";
   constructor() { }
 
   ngOnInit(): void {
@@ -47,5 +50,12 @@ export class JobListComponent implements OnInit {
   }
   delete(retid: number) {
     this.jobs.splice(retid, 1);
+  }
+  add(){
+    this.jobs.push({
+      id: this.id,
+      jobAdded: this.jobAdded,
+      job: this.job
+    })
   }
 }

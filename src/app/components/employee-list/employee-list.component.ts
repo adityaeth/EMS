@@ -25,7 +25,7 @@ export class EmployeeListComponent implements OnInit {
         joiningDate: '25-6-20',
         name: 'Kingshuk Nath',
         mail: 'mail@test.com',
-        phone: '752651216',
+        phone: '7882651216',
         job: 'Web Developer'
       },
       {
@@ -33,7 +33,7 @@ export class EmployeeListComponent implements OnInit {
         joiningDate: '25-6-20',
         name: 'Aftab Mustafa',
         mail: 'mail@test.com',
-        phone: '752651216',
+        phone: '855551216',
         job: 'Graphic Designer'
       },
       {
@@ -41,7 +41,7 @@ export class EmployeeListComponent implements OnInit {
         joiningDate: '25-6-20',
         name: 'Debangan Roy',
         mail: 'mail@test.com',
-        phone: '752651216',
+        phone: '955321216',
         job: 'Web Designer'
       },
       {
