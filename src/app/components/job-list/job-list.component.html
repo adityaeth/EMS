@@ -5,7 +5,8 @@
         <div class="col-lg-3 col-md-3">
             <div class="list-group mb-3">
                 <div class="list-group-item active"> Jobs Data</div>
-                <a routerLink="#" class="list-group-item" data-bs-toggle="modal" data-bs-target="#add_job">Add New
+                <a routerLink="/joblist" class="list-group-item" data-bs-toggle="modal" data-bs-target="#add_job">Add
+                    New
                     Job</a>
                 <a routerLink="../joblist" class=" list-group-item">View All Jobs</a>
             </div>
@@ -49,18 +50,22 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form (submit)="add()">
+                <form>
                     <div class="mb-3">
                         <input type="number" class="form-control form-control-sm" name="ID" placeholder="ID" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control form-control-sm" name="jobAdded" placeholder="Date : mm/dd/yy" required>
+                        <input type="text" class="form-control form-control-sm" name="jobAdded"
+                            placeholder="Date : mm/dd/yy" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control form-control-sm" name="job" placeholder="Job Name" required>
+                        <input type="text" class="form-control form-control-sm" name="job" placeholder="Job Name"
+                            required>
                     </div>
                     <div class="mb-3">
-                        <button type="submit" class="btn w-100 btn-sm btn-success btn-black">Add New Job</button>
+                        <button type="button" type="submit" class="btn w-100 btn-sm btn-success btn-black"
+                            data-bs-dismiss="modal">Add
+                            New Job</button>
                     </div>
                 </form>
             </div>
@@ -71,7 +76,7 @@
 
 <!-- Job Details Modal -->
 
-<div class="modal fade" id="detail_job1" tabindex="-1" aria-labelledby="detail_job1" aria-hidden="true">
+<div class="modal fade" id="detail_job1" tabindex="-1" aria-labelledby="detail_job" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
